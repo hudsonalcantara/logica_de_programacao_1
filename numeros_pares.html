@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+	}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+	}
+
+	var numeroDesejado = parseInt(prompt("Até qual número você deseja saber os numeros pares?"));
+
+	var numero = 2;
+
+	while(numero <= numeroDesejado) {
+
+		mostra(numero);
+		numero = numero + 2;
+	}
+
+	mostra("FIM!");
+
+</script>
